@@ -2,13 +2,13 @@
     <article id="terms" />
 
     <script>
-        fetch('https://5ifoooqxyo.microcms.io/api/v1/terms’,
+        fetch('https://5ifoooqxyo.microcms.io/api/v1/terms',
             { headers: { "X-MICROCMS-API-KEY": "R1EyJq04nbljk3nsHPcMkgszHqSOGVZ1v7Hk" } })
             .then((res) => {
                 return res.json();
             })
             .then((json) => {
-                document.getElementById("terms”).innerHTML = json.body;
+                document.getElementById("terms").innerHTML = json.body;
             })
             .catch((reason) => {
                 console.log(reason);
